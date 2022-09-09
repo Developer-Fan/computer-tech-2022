@@ -14,10 +14,6 @@ body {
     background-image: url("../Assets/fried-rice-background.jpg");
 }
 
-.other {
-    /*background-color: #f8f4e7;*/
-}
-
 .other img,
 .other iframe {
     border: 10px solid #CFB793;
