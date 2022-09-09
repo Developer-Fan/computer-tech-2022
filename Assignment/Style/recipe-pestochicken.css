@@ -1,0 +1,27 @@
+body {
+    background-color: #D5BC61;
+}
+
+.menu {
+    background-color: #9c8635 !important;
+}
+
+.menu ul li a {
+    color: #e4e49e;
+}
+
+.banner {
+    background-image: url("../Assets/pesto-chicken-background.jpg");
+}
+
+.other img,
+.other iframe {
+    border: 10px solid #9c8635;
+}
+
+.body {
+    color: #52470e;
+}
+
+
+/*we use different styles for each recipe to give them a sense of uniqueness*/

@@ -1,0 +1,24 @@
+body {
+    background-color: #ffe991;
+}
+
+.menu {
+    background-color: #fcdc5c !important;
+}
+
+.menu ul li a {
+    color: #c88502;
+}
+
+.banner {
+    background-image: url("../Assets/eggcups-background.jpg");
+}
+
+.other img,
+.other iframe {
+    border: 10px solid #fcdc5c;
+}
+
+.body {
+    color: #6d5f11;
+}
