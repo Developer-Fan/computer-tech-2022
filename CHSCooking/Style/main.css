@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+body {
+    margin: 0 !important;
+    /*The !important tag overrides any other CSS rules and, in this case,
+    is used to make sure that the margin of body is 0.*/
+    overflow-x: hidden;
+    /* Hides the horizontal scroll bar */
+}
+
+* {
+    /* The *(universal) selector is used to select all elements on the page.*/
+    margin: 0;
+}
+
+.menu {
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+    padding: 10px 20px 10px 0px;
+    background-color: #2f7230;
+}
+
+.banner {
+    text-align: center;
+    padding: 150px;
+    background-image: url("../Assets/background.png");
+    /* The url() function specifies the location of the image */
+    background-size: cover;
+    /* Makes sure the image is the size of .banner */
+    background-repeat: no-repeat;
+    /* Makes sure the image doesn't repeat */
+}
+
+.banner h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    /*extra bold*/
+    position: relative;
+    /*relative positioning is used to position the text in the middle of the
+    banner because other positioning methods would position the text relative to
+    the page, not the banner and thus text-align: center wouldn't work.*/
+    color: #ffffff;
+    font-size: 48px;
+}
+
+.cover {
+    opacity: 0.4;
+    /* Set the opacity of the cover to 40%, to make it semi-transparent */
+    position: absolute;
+    width: 100%;
+    height: 358px;
+    background-color: #1a381a;
+}
+
+.menu ul {
+    list-style: none;
+    /* Removes the bullet points because menus do not need bullet points */
+    display: inline-block;
+    vertical-align: middle;
+    /* Makes sure the ul containing the links is in the middle of the menu */
+}
+
+.menu ul li {
+    vertical-align: middle;
+    display: inline;
+    margin: 10px 30px;
+}
+
+.menu ul li a {
+    font-size: 25px;
+    position: relative;
+    /*In this case we need to set this to relative because we want the links to
+    be positioned top: -40px; relative to the ul, not the page.*/
+    top: -40px;
+    color: #ffffff;
+    transition: 0.5s color;
+    /* The transition property specifies how the attribute will transition from color: 
+    #ffffff, when it is hovered over, to color: #2f7230, and vice versa. The 0.5s 
+    specifies the duration of the transition. */
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #1a381a;
+    transition: 0.5s color;
+}
+
+.menu img {
+    margin-left: 50px;
+    display: inline-block;
+    height: 100px;
+}
+
+.selected {
+    color: #1a381a !important;
+}
+
+.body {
+    font-family: "Open sans", sans-serif;
+}
