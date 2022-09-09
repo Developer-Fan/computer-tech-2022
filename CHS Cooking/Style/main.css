@@ -1,8 +1,7 @@
-/* Write your CSS here */
-
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 !important;
@@ -12,10 +11,6 @@ body {
 * {
     margin: 0;
 }
-
-
-/* Overide all styles with a margin, including body to allow
-the menu to touch the top of the page */
 
 .menu {
     font-family: 'Titillium Web', sans-serif;
