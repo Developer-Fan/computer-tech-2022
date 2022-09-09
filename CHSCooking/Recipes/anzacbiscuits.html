@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anzac biscuits</title>
+    <!-- As we can see below, all paths start with ../, which means that they are relative to the parent directory.
+         However, unlike ./, which means the current directory, ../ means the parent directory, which is the directory
+         that contains the current directory. This is important because we want to be able to use the files from
+         the parent directory, without having to write the absolute path(C://Users/abc/etc/file.filetype) to the files
+         or without having to copy the contents of the parent directory into the current directory. -->
     <link rel="stylesheet" type="text/css" href="../Style/main.css">
     <link rel="stylesheet" type="text/css" href="../Style/recipe-anzacbiscuits.css">
     <link rel="stylesheet" type="text/css" href="../Style/recipe-main.css">
