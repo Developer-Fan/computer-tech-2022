@@ -68,7 +68,7 @@ body {
 }
 
 .menu ul li a {
-    font-size: 25px;
+    font-size: 24px;
     position: relative;
     /*In this case we need to set this to relative because we want the links to
     be positioned top: -40px; relative to the ul, not the page.*/
