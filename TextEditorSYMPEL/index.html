@@ -1,8 +1,80 @@
-<html>
-  <head>
-    <title>Test</title>
-  </head>
-  <body>
-    Test
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE</title>
+    <style>
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 30px;
+        }
+        
+        #texteditor {
+            position: relative;
+            /*top: -30px;*/
+            margin: 0 auto;
+            width: calc(100% - 40px);
+            height: calc(95vh - 70px);
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        div:focus {
+            outline: none;
+        }
+        /*#auto,
+        label[for="auto"] {
+            position: relative;
+            top: -30px;
+        }*/
+    </style>
+</head>
+
+<body>
+    <h1>TextEditor SYMPEL</h1>
+    <!--<input type="checkbox" id="auto" /> <label for="auto">Autosave</label>-->
+    <div id="texteditor" contenteditable="true">Click to add text...</div>
+    <script lang="javascript">
+        var textEditor = document.querySelector('div');
+        var saveDoc = localStorage.getItem('textDocument');
+        if (saveDoc !== null) {
+            textEditor.innerHTML = saveDoc;
+        } else {
+            textEditor.innerHTML = '<p>Click to add text...</p>';
+        }
+        document.addEventListener("keydown", (e) => {
+            /*if (e.key === "s" && e.ctrlKey) {
+                e.preventDefault()
+                localStorage.setItem('textDocument', textEditor.innerHTML);
+                localStorage.setItem('checkboxStatus', "checkbox-unchecked");
+                alert('File saved!');
+                document.execCommand("save", true, document.getElementById("texteditor")
+                    .write("text.html").save);
+                document.execCommand('save');
+            }*/
+            localStorage.setItem('textDocument', textEditor.innerHTML);
+        });
+        /*document.addEventListener("keydown", function(e) {
+            if (e.key == "Enter") {
+                textEditor.innerHTML += "<br>";
+            }
+        });*/
+    </script>
+</body>
+
 </html>
